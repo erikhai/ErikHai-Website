@@ -1,20 +1,20 @@
 import { useState } from "react";
 import "./App.css";
-import Footer from "./components/Footer"; // Import Footer
+import Footer from "./components/Footer"; 
+import Navbar from "./components/NavBar";
 
 function App() {
   return (
     <>
+    <Navbar/>
       <div>
         Nav Bar
         Some fancy intro
         intro section (about me)
         experiences
         projects
-        contact details (footer)
       </div>
 
-      {/* Footer Component */}
       <Footer />
     </>
   );
