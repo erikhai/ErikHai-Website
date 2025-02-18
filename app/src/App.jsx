@@ -8,11 +8,10 @@ function App() {
     <>
     <Navbar/>
       <div>
-        Nav Bar
-        Some fancy intro
-        intro section (about me)
-        experiences
-        projects
+        Some fancy intro<br/>
+        intro section (about me)<br/>
+        experiences<br/>
+        projects<br/>
       </div>
 
       <Footer />
