@@ -3,6 +3,10 @@ html, body {
   margin: 0;
   padding: 0;
 }
+body, html {
+  overflow: auto !important;
+}
+
 
 #root {
   display: flex;
@@ -13,3 +17,4 @@ html, body {
 main {
   flex: 1;
 }
+

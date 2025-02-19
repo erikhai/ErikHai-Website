@@ -1,3 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+}
+
 .intro-container {
     position: relative;
     width: 100vw;
@@ -6,12 +13,13 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding-top: 500px; /* Adjust this value based on your navbar height */
 }
 
 .intro-image-container {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -19,9 +27,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5; 
+    opacity: 0.5;
+    object-position: center; /* Ensure the image is centered */
 }
-
 
 .intro-text {
     display: flex;
@@ -30,11 +38,11 @@
     align-items: center;
     text-align: center;
     color: white;
-    position: absolute;
-    width: 90vw;  
-    max-width: 800px; 
+    position: relative; /* Relative positioning */
+    width: 90vw;
+    max-width: 800px;
     padding: 20px;
-    margin-top: 100px;
+    margin: auto; /* Center horizontally */
 }
 
 .intro-text h1 {
@@ -62,5 +70,17 @@
 
 .space {
     display: inline-block;
-    width: 8px;
+    width: 8px; /* Space width */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .intro-text {
+        margin-top: 130px;
+        padding: 40px 20px; /* Add more padding on smaller screens */
+    }
+    .intro-container{
+        height: 50vh;
+    }
+    
 }

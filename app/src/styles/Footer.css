@@ -4,7 +4,7 @@
   color: white;
   text-align: center;
   padding: 20px 0;
-  position: relative; 
+  position: relative;
   margin-top: auto;
 }
 
@@ -14,8 +14,18 @@
   align-items: center;
 }
 
+.footer-content p {
+  font-weight: bold; /* Make text bold */
+  font-size: 1.8rem; /* Increase text size */
+}
+
 .social-icons a {
   margin: 0 10px;
   color: white;
   font-size: 1.5rem;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Increase size when hovered */
 }

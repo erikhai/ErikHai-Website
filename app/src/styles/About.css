@@ -1,0 +1,91 @@
+/* General Container Styling */
+.about-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+  
+/* Wrapper for cards to keep them aligned */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+  
+/* Layout for larger screens */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        align-items: stretch; /* Ensures both cards are aligned */
+    }
+}
+  
+/* Card Styling */
+.about-card, .skills-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    min-height: 200px; /* Ensures both cards have the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content to the top */
+}
+  
+/* About Me Card */
+.about-card {
+    background: white;
+    color: black;
+}
+  
+/* Skills Card (Opposite Color Scheme) */
+.skills-card {
+    background: black;
+    color: white;
+}
+  
+/* Title Styling */
+.about-card h2, .skills-card h2 {
+    margin: 0; /* Remove margin to align titles */
+    padding-bottom: 10px; /* Add padding for spacing below title */
+}
+  
+/* Center Content of Each Card */
+.about-card p {
+    text-align: center; /* Center align text */
+}
+  
+/* Skills Section */
+.skills-list {
+    display: flex; /* Change to flex for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 10px; /* Space between skill items */
+    justify-content: center; /* Center the skill items */
+}
+  
+/* Skill Item */
+.skill-item {
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+  
+.skill-item.hovered {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .about-card, .skills-card {
+        max-width: 90%; /* Reduce card width on mobile */
+    }
+}

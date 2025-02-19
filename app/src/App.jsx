@@ -2,6 +2,8 @@ import "./App.css";
 import Footer from "./components/Footer"; 
 import Navbar from "./components/NavBar";
 import Intro1 from "./components/Intro1";
+import About from "./components/About";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -9,9 +11,10 @@ function App() {
       <Navbar />
       <main>
         <Intro1 />
+        <About />
+        
         <div>
-       
-          Intro section (about me) [One secion is about me one secion is about skill set]<br />
+
           Experiences<br />
           Projects<br />
         </div>
