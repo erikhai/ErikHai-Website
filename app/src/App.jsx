@@ -12,7 +12,7 @@ function App() {
       <main>
         <Intro1 />
         <About />
-        
+        <Experience />
         <div>
 
           Experiences<br />

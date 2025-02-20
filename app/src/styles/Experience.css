@@ -4,6 +4,11 @@
     margin: 100px auto;
 }
 
+
+.container {
+    border: 2px solid red; /* Temporary debug border */
+}
+
 .container {
     padding: 10px 30px; /* Reduced padding */
     position: relative;
@@ -11,17 +16,17 @@
     animation: movedown 1s linear forwards;
     opacity: 0;
 }
-@keyframes movedown{
-    0%{
-        opacity: 1;
+@keyframes movedown {
+    0% {
+        opacity: 0; /* Start with opacity at 0 */
         transform: translateY(-30px);
     }
-    100%{
-        opacity: 1;
+    100% {
+        opacity: 1; /* End with opacity at 1 */
         transform: translateY(0px);
     }
-
 }
+
 
 .container:nth-child(1){
     animation-delay: 0s;
@@ -57,7 +62,7 @@
 }
 
 .container img {
-    position: absolute;
+    position: relative;
     width: 40px;
     border-radius: 50%;
     right: -20px;

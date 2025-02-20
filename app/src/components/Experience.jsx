@@ -3,6 +3,7 @@ import usyd_logo from "../assets/university_of_sydney_logo.jpg";
 import usyd_succs from "../assets/usyd_csec_logo.jpg";
 import aec_logo from "../assets/aec_logo.jpg";
 import paragon_logo from "../assets/paragon_logo.png";
+import "../styles/Experience.css"
 const Experience = () => {
 
 
