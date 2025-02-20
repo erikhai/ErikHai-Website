@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "https://erikhai.github.io/ErikHai-Website/",
+  "homepage": "https://erikhai.github.io/ErikHai-Website/app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d app/dist"
   },
   "dependencies": {
     "app": "file:",
