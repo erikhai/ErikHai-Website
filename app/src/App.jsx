@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar";
 import Intro1 from "./components/Intro1";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Projects from "./components/Project";
 
 function App() {
   return (
@@ -13,11 +14,9 @@ function App() {
         <Intro1 />
         <About />
         <Experience />
-        <div>
-
-          Experiences<br />
-          Projects<br />
-        </div>
+        <Projects/>
+        
+        
       </main>
       <Footer />
     </div>

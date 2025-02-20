@@ -7,14 +7,29 @@ body, html {
   overflow: auto !important;
 }
 
+main > * {
+    border: 2px solid red; /* Add border to all direct children of main */
+    margin-bottom: 10px;
+}
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+#root {
+  min-height: 100vh;
+  overflow: auto;
+}
 
 main {
   flex: 1;
+}
+html {
+  overflow-y: scroll; /* Forces the scrollbar to be hidden but keeps scrolling */
+}
+
+body {
+  overflow-y: hidden; /* Hides the vertical scrollbar */
 }
 
