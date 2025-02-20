@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "https://erikhai.github.io/ErikHai-Website/",
+  "homepage": "https://erikhai.github.io/ErikHai-Website/app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
