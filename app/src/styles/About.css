@@ -1,20 +1,31 @@
 /* General Container Styling */
+/* General Container Styling */
 .about-container {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center everything */
+
     text-align: center;
+    width: 100%;
 }
-  
-/* Wrapper for cards to keep them aligned */
+
+/* Ensure the cards stay in a row layout */
 .about-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Keep cards in a row */
+    align-items: stretch;
+    justify-content: center; /* Center cards under the title */
     gap: 20px;
     width: 100%;
     max-width: 900px;
 }
+
+/* Center the Title */
+.about-container h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust as needed */
+}
+
   
 /* Layout for larger screens */
 @media (min-width: 768px) {

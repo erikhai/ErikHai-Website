@@ -30,6 +30,7 @@ export default function About() {
   return (
     <>
     <div className="about-container">
+      <h1>Who Am I?</h1>
       <div className="about-content">
         {/* About Me Card */}
         <div className="about-card">

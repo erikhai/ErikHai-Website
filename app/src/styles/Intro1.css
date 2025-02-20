@@ -1,17 +1,4 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    padding-top: 60px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    width: 100%;
-}
-html {
-    overflow-y: scroll; /* Forces the scrollbar to be hidden but keeps scrolling */
-}
 
-body {
-    overflow-y: hidden; /* Hides the vertical scrollbar */
-}
 
 
 .intro-container {
@@ -27,18 +14,22 @@ body {
 
 .intro-image-container {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw; /* Ensure it takes up only the screen width */
+    height: auto; /* Let height adjust based on aspect ratio */
+    top: 0;
+    left: 0;
     overflow: hidden;
 }
 
 .intro-image {
-    width: 100%;
-    height: 100%;
+    width: 100vw; /* Image width matches screen width */
+    height: auto; /* Maintain aspect ratio */
+    
     object-fit: cover;
     opacity: 0.5;
     object-position: center; /* Ensure the image is centered */
 }
+
 
 .intro-text {
     display: flex;

@@ -5,12 +5,14 @@ import Intro1 from "./components/Intro1";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Project";
+import Buffer from "./components/Buffer";
 
 function App() {
   return (
     <div id="root">
       <Navbar />
       <main>
+        <Buffer/>
         <Intro1 />
         <About />
         <Experience />

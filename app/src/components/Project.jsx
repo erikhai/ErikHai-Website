@@ -3,65 +3,57 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles/Project.css';
-import test from "../assets/test.jpg"; // Ensure the correct path
+
+import banner1 from "../assets/portfolio-banner.png"
+import banner2 from "../assets/cardify-banner.png"
+import banner3 from "../assets/usyd-banner.png"
+import banner4 from "../assets/bank-banner.jpg"
+import banner5 from "../assets/cypher-banner.jpg"
+import banner6 from "../assets/discord-banner.jpg"
 
 const projects = [
   {
     name: 'Portfolio',
     type: 'Web Application (Personal Project)',
-    banner: test,
-    description: 'A brief description of Project One.',
+    banner: banner1,
+    description: 'This website has been coded using React. The main purpose of this website was to see how much my front-end skills have improved while also designing a website that showcases who I am.',
     skills: ['React', 'CSS'],
-    github: 'https://github.com/yourusername/project-one',
+    github: 'https://github.com/erikhai/ErikHai-Website',
   },
   {
     name: 'Cardify',
     type: 'Uni Assignment (ELEC3609)',
-    banner: 'path/to/banner2.jpg',
-    description: 'A brief description of Project Two.',
+    banner: banner2,
+    description: 'This was a full stack university assignment conducted in a group of 5. This project is a flashcard application where users can make their own decks of cards for studying and utilise various game modes to test their memory. This assignment made us go through the entire software life cycle, from planning out scope requirements and wireframes to developing, testing and deploying the application. We used react to design the frontend and django for the backend. We used the amason services to deploy our project.',
     skills: ['React', 'Django', 'AWS', 'Figma'],
     github: null,
   },
   {
-    name: 'Capstone Assignment',
+    name: 'Capstone Project',
     type: 'Uni Assignment (SOFT3888)',
-    banner: 'path/to/banner3.jpg',
-    description: 'A brief description of Project Three.',
+    banner: banner3,
+    description: 'This was a full stack university assignment conducted in a group of 6. This project was about developing a website that would allow users to forecast values of a dataset so that the user can study how their dataset may behave in the future. This project uses django for the front and back end and python for the machine learning models.',
     skills: ['Django', 'Figma', "Python"],
     github: null, // No GitHub link
   },
   {
     name: 'Bank Replica',
-    type: 'GUI (Personal Project',
-    banner: 'path/to/banner3.jpg',
-    description: 'A brief description of Project Four.',
+    type: 'Terminal Based (Personal Project)',
+    banner: banner4,
+    description: 'This is a terminal based replica of what would happen in a bank. It uses ORM to manage a database and allows users to deposit, withdraw and transfer money. There is also an administrative viewpoint setup for overall system management.',
     skills: ['Java'],
     github:  'https://github.com/yourusername/project-one', // No GitHub link
   },
   {
     name: 'Cyphers',
     type: 'Terminal Based (Personal Project)',
-    banner: 'path/to/banner3.jpg',
-    description: 'A brief description of Project Five.',
+    banner: banner5,
+    description: 'This is a terminal based system that allows users to encrypt and decrypt messages. The user is presented with various methods to chose from. This was a quick side project for me to do to better understand how encryption/decryption works and understand how hard it is to make a secure system.',
     skills: ['Python'],
-    github: null, // No GitHub link
+    github: "https://github.com/erikhai/Cyphers", // No GitHub link
   },
-  {
-    name: 'Project Three',
-    type: 'Football????',
-    banner: 'path/to/banner3.jpg',
-    description: 'A brief description of Project Six.',
-    skills: ['Java', 'React', 'CSS', 'MongoDB'],
-    github: null, // No GitHub link
-  },
-  {
-    name: 'Discord Bot',
-    type: 'Terminal Based (Personal Project)',
-    banner: 'path/to/banner3.jpg',
-    description: 'A brief description of Project Seven.',
-    skills: ['Electron', 'Node.js'],
-    github: null, // No GitHub link
-  },
+
+ 
 ];
 
 const Projects = () => {
