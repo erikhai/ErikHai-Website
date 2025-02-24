@@ -1,17 +1,26 @@
+:root {
+  color-scheme: dark; 
+}
+
 html, body {
   height: auto !important;
   min-height: 100vh;
-  overflow-x: hidden !important; /* Prevent horizontal scrolling */
+  overflow-x: hidden !important; 
   overflow-y: auto !important;
   scroll-behavior: smooth;
-  width: 100vw; /* Ensure full viewport width */
+  width: 100vw;
+  
+  background-color: #121212 !important;
+  color: white !important;
 }
 
 #root {
   position: relative;
   min-height: 100vh;
-  overflow-x: hidden !important; /* Prevent horizontal scrolling */
+  overflow-x: hidden !important; 
   overflow-y: auto !important;
-  width: 100vw; /* Ensure full viewport width */
+  width: 100vw; 
+  
+  background-color: #121212 !important; 
+  color: white !important; 
 }
-

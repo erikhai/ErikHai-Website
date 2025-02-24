@@ -70,6 +70,7 @@
 @media (max-width: 768px) {
     .intro-container {
         height: 40vh;
+        margin-top: 70px;
     }
 
     .intro-text {
