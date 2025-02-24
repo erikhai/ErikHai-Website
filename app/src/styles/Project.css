@@ -6,16 +6,14 @@
   text-align: center;
   padding: 20px;
 }
-.h1{
-  color: #ffffff;
-  font-size: 2.5rem;
-}
+
 .projects-title {
   text-align: center;
 
   font-weight: bold;
   margin-bottom: 20px;
-  color: white;
+  color: #ffffff;
+  font-size: 2.5rem;
 }
 
 .slick-slider {
