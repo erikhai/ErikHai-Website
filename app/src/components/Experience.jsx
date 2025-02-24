@@ -7,22 +7,22 @@ import "../styles/Experience.css";
 
 const experiences = [
   {
-    logo: paragon_logo, 
+    logo: paragon_logo,
     company: "Paragon 4",
-    role: "Consultant Software Engineer", // Fixed spelling: "Consultant"
+    role: "Consultant Software Engineer", 
     duration: "Nov 2024 - Feb 2025",
     description: "I helped develop software applications designed to work collaboratively to support healthcare workers. The goal of these applications was to help reduce stress and to improve the overall well-being for professionals in high-pressure environments. By focusing on enhancing their mental & physical health, we aimed to enable healthcare workers to return to their peak performance.",
   },
-  { 
+  {
     logo: usyd_succs,
-    company: "USYD Cyber Security Society", // Fixed spelling: "Cyber Security"
-    role: "Industry Liaison", // Fixed spelling: "Liaison"
+    company: "USYD Cyber Security Society", 
+    role: "Industry Liaison", 
     duration: "Nov 2024 - Present",
     description: "My main role is to find companies that are interested in sponsoring the society or help out with certain events such as industry talks, CTFs, etc.", // Fixed spelling: "sponsoring", "CTFs"
   },
-  { 
+  {
     logo: usyd_succs,
-    company: "USYD Cyber Security Society", // Fixed spelling: "Cyber Security"
+    company: "USYD Cyber Security Society", 
     role: "Event Director",
     duration: "Nov 2023 - Nov 2024",
     description: "My main role was to help plan out what kinds of events should be conducted, how these events would look like and organise where these events would be conducted.", // Fixed spelling: "organize" (changed to British English spelling for consistency)
@@ -37,7 +37,7 @@ const experiences = [
   {
     logo: aec_logo,
     company: "AEC",
-    role: "Polling Assistant", // Fixed spelling: "Assistant"
+    role: "Polling Assistant", 
     duration: "Oct 2023 - Oct 2023",
     description: "During the referendum, I had to help set up the place, help give out ballot papers, manage queues, keep count of all voters, sort out votes and clean up. From this experience, I gained a better understanding of what it means to work quickly but efficiently and developed a better understanding of working in a team.", // Fixed grammar: "sorting out votes" changed to "sort out votes", added a comma after "experience"
   },
@@ -46,7 +46,7 @@ const experiences = [
 const Experience = () => {
   return (
     <div className="timeline-container">
-      <h1>My Experience</h1>
+      <h1>Experience</h1>
       <div className="timeline">
         {experiences.map((exp, index) => (
           <div className="timeline-item" key={index}>

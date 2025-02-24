@@ -4,7 +4,7 @@ import image from "../assets/intro-img.jpg";
 const wrapText = (text) => {
   return text.split("").map((char, index) => {
     if (char === " ") {
-      return <span key={index} className="space">&nbsp;</span>; // Ensure spaces remain visible
+      return <span key={index} className="space">&nbsp;</span>; 
     }
     return (
       <span key={index} className="hover-char">

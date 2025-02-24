@@ -1,61 +1,55 @@
-
-
-
 .intro-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding-top: 500px; /* Adjust this value based on your navbar height */
 }
 
 .intro-image-container {
     position: absolute;
-    width: 100vw; /* Ensure it takes up only the screen width */
-    height: auto; /* Let height adjust based on aspect ratio */
+    width: 100vw;
+    height: 100%;
     top: 0;
     left: 0;
     overflow: hidden;
 }
 
 .intro-image {
-    width: 100vw; /* Image width matches screen width */
-    height: auto; /* Maintain aspect ratio */
-    
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     opacity: 0.5;
-    object-position: center; /* Ensure the image is centered */
 }
 
-
 .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    position: relative; /* Relative positioning */
     width: 90vw;
     max-width: 800px;
     padding: 20px;
-    margin: auto; /* Center horizontally */
 }
 
 .intro-text h1 {
-    font-size: clamp(2rem, 5vw, 4rem); 
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: bold;
     margin: 0;
-    white-space: normal; 
 }
 
 .intro-text p {
     font-size: clamp(1rem, 3vw, 1.5rem);
     margin-top: 10px;
-    white-space: normal; 
 }
 
 .hover-char {
@@ -70,17 +64,16 @@
 
 .space {
     display: inline-block;
-    width: 8px; /* Space width */
+    width: 8px;
 }
 
-/* Media query for mobile screens */
 @media (max-width: 768px) {
+    .intro-container {
+        height: 40vh;
+    }
+
     .intro-text {
-        margin-top: 130px;
-        padding: 40px 20px; /* Add more padding on smaller screens */
+        width: 90%;
+        padding: 20px;
     }
-    .intro-container{
-        height: 50vh;
-    }
-    
 }

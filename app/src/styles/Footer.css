@@ -15,17 +15,17 @@
 }
 
 .footer-content p {
-  font-weight: bold; /* Make text bold */
-  font-size: 1.8rem; /* Increase text size */
+  font-weight: bold; 
+  font-size: 1.8rem; 
 }
 
 .social-icons a {
   margin: 0 10px;
   color: white;
   font-size: 1.5rem;
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: transform 0.3s ease;
 }
 
 .social-icons a:hover {
-  transform: scale(1.2); /* Increase size when hovered */
+  transform: scale(1.2); 
 }

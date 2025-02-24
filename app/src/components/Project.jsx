@@ -9,7 +9,7 @@ import banner2 from "../assets/cardify-banner.png"
 import banner3 from "../assets/usyd-banner.png"
 import banner4 from "../assets/bank-banner.jpg"
 import banner5 from "../assets/cypher-banner.jpg"
-import banner6 from "../assets/discord-banner.jpg"
+import banner6 from "../assets/syncs-banner.jpg"
 
 const projects = [
   {
@@ -21,10 +21,18 @@ const projects = [
     github: 'https://github.com/erikhai/ErikHai-Website',
   },
   {
+    name: 'SYNCS Bot Bottle',
+    type: 'Competition',
+    banner: banner6,
+    description: 'This competition hosted by the SYNCS Society lasted for roughly 2 weeks. The purpose of this competition is to was to develop an algorithm that would achieve a high win rate for the game RISK. Out of 80 teams, we ended up finishing in the top 10.',
+    skills: ['Python'],
+    github: "https://github.com/erikhai/risk-game-engine",
+  },
+  {
     name: 'Cardify',
     type: 'Uni Assignment (ELEC3609)',
     banner: banner2,
-    description: 'This was a full stack university assignment conducted in a group of 5. This project is a flashcard application where users can make their own decks of cards for studying and utilise various game modes to test their memory. This assignment made us go through the entire software life cycle, from planning out scope requirements and wireframes to developing, testing and deploying the application. We used react to design the frontend and django for the backend. We used the amason services to deploy our project.',
+    description: 'This was a full stack university assignment conducted in a group of 5. This project is a flashcard application where users can make their own decks of cards for studying and utilise various game modes to test their memory. This assignment made us go through the entire software life cycle, from planning out scope requirements and wireframes to developing, testing and deploying the application. We used react to design the frontend and django for the backend. We used the amazon services to deploy our project.',
     skills: ['React', 'Django', 'AWS', 'Figma'],
     github: null,
   },
@@ -34,7 +42,7 @@ const projects = [
     banner: banner3,
     description: 'This was a full stack university assignment conducted in a group of 6. This project was about developing a website that would allow users to forecast values of a dataset so that the user can study how their dataset may behave in the future. This project uses django for the front and back end and python for the machine learning models.',
     skills: ['Django', 'Figma', "Python"],
-    github: null, // No GitHub link
+    github: null,
   },
   {
     name: 'Bank Replica',
@@ -42,7 +50,7 @@ const projects = [
     banner: banner4,
     description: 'This is a terminal based replica of what would happen in a bank. It uses ORM to manage a database and allows users to deposit, withdraw and transfer money. There is also an administrative viewpoint setup for overall system management.',
     skills: ['Java'],
-    github:  'https://github.com/yourusername/project-one', // No GitHub link
+    github: 'https://github.com/yourusername/project-one', 
   },
   {
     name: 'Cyphers',
@@ -50,10 +58,10 @@ const projects = [
     banner: banner5,
     description: 'This is a terminal based system that allows users to encrypt and decrypt messages. The user is presented with various methods to chose from. This was a quick side project for me to do to better understand how encryption/decryption works and understand how hard it is to make a secure system.',
     skills: ['Python'],
-    github: "https://github.com/erikhai/Cyphers", // No GitHub link
+    github: "https://github.com/erikhai/Cyphers", 
   },
 
- 
+
 ];
 
 const Projects = () => {
@@ -72,7 +80,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h1 className="projects-title">My Projects</h1>
+      <h1 className="projects-title">Projects & Competitions</h1>
       <Slider {...settings}>
         {projects.map((project, index) => (
           <div key={index} className="project-card">

@@ -1,85 +1,76 @@
-/* General Container Styling */
-/* General Container Styling */
+
 .about-container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center everything */
+    flex-direction: column;
+    align-items: center;
 
     text-align: center;
     width: 100%;
 }
 
-/* Ensure the cards stay in a row layout */
 .about-content {
     display: flex;
-    flex-direction: row; /* Keep cards in a row */
+    flex-direction: row;
     align-items: stretch;
-    justify-content: center; /* Center cards under the title */
+    justify-content: center;
     gap: 20px;
     width: 100%;
     max-width: 900px;
 }
 
-/* Center the Title */
 .about-container h1 {
     text-align: center;
-    font-size: 2.5rem; /* Adjust as needed */
+    font-size: 2.5rem;
 }
 
-  
-/* Layout for larger screens */
+
 @media (min-width: 768px) {
     .about-content {
         flex-direction: row;
-        align-items: stretch; /* Ensures both cards are aligned */
+        align-items: stretch;
     }
 }
-  
-/* Card Styling */
-.about-card, .skills-card {
+
+.about-card,
+.skills-card {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    min-height: 200px; /* Ensures both cards have the same height */
+    min-height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns the content to the top */
+    justify-content: flex-start;
 }
-  
-/* About Me Card */
+
 .about-card {
     background: white;
     color: black;
 }
-  
-/* Skills Card (Opposite Color Scheme) */
+
 .skills-card {
     background: black;
     color: white;
 }
-  
-/* Title Styling */
-.about-card h2, .skills-card h2 {
-    margin: 0; /* Remove margin to align titles */
-    padding-bottom: 10px; /* Add padding for spacing below title */
+
+.about-card h2,
+.skills-card h2 {
+    margin: 0;
+    padding-bottom: 10px;
 }
-  
-/* Center Content of Each Card */
+
 .about-card p {
-    text-align: center; /* Center align text */
+    text-align: center;
 }
-  
-/* Skills Section */
+
 .skills-list {
-    display: flex; /* Change to flex for horizontal layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 10px; /* Space between skill items */
-    justify-content: center; /* Center the skill items */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
-  
-/* Skill Item */
+
 .skill-item {
     background: #00aaff;
     color: white;
@@ -88,15 +79,27 @@
     cursor: pointer;
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
-  
+
 .skill-item.hovered {
     background: #0056b3;
     transform: scale(1.1);
 }
 
-/* Media query for mobile screens */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
 @media (max-width: 768px) {
-    .about-card, .skills-card {
-        max-width: 90%; /* Reduce card width on mobile */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card,
+    .skills-card {
+        max-width: 80%;
     }
 }

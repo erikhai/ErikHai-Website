@@ -2,26 +2,26 @@
     width: 100%;
     overflow-x: auto;
     padding: 20px 0;
-    text-align: center; /* Center the title */
+    text-align: center;
 }
 
 .timeline {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center the boxes */
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 10px;
 }
 
 .timeline-item {
-    flex: 1 1 200px; /* Allow items to grow and shrink, set a base width */
-    max-width: 250px; /* Set a maximum width for each box */
+    flex: 1 1 200px;
+    max-width: 250px;
     padding: 15px;
     background: black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
-    margin: 10px; /* Add margin for spacing between boxes */
+    margin: 10px;
 }
 
 .timeline-item:hover {
@@ -33,13 +33,13 @@
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-    margin: 0 auto 10px; /* Center the logo horizontally */
+    margin: 0 auto 10px;
 }
 
 .company {
     font-size: 16px;
     font-weight: bold;
-    color: #ffffff; /* Add color to company name */
+    color: #ffffff;
 }
 
 .role,
@@ -47,33 +47,35 @@
 .description {
     font-size: 14px;
     color: #ffffff;
-    margin: 5px 0; /* Add margin for spacing */
+    margin: 5px 0;
 }
 
-/* Media Queries for Mobile Devices */
+
 @media (max-width: 768px) {
     .timeline {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .timeline-item {
-        max-width: 90%; /* Allow boxes to take up more space on smaller screens */
-        margin: 10px 0; /* Add vertical margin between boxes */
+        max-width: 90%;
+        margin: 10px 0;
     }
 
     .company-logo {
-        width: 40px; /* Slightly smaller logo for mobile */
+        width: 40px;
         height: 40px;
     }
 
     .company {
-        font-size: 18px; /* Slightly larger font for better readability */
+        font-size: 18px;
     }
 
     .role,
     .duration,
     .description {
-        font-size: 12px; /* Slightly smaller text for descriptions */
+        font-size: 12px;
     }
+
+
 }
