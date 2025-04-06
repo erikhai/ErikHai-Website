@@ -19,6 +19,7 @@ const projects = [
     description: 'This website has been coded using React. The main purpose of this website was to see how much my front-end skills have improved while also designing a website that showcases who I am.',
     skills: ['React', 'CSS'],
     github: 'https://github.com/erikhai/ErikHai-Website',
+    video: null
   },
   {
     name: 'SYNCS Bot Bottle',
@@ -27,6 +28,7 @@ const projects = [
     description: 'This competition hosted by the SYNCS Society lasted for roughly 2 weeks. The purpose of this competition is to was to develop an algorithm that would achieve a high win rate for the game RISK. Out of 80 teams, we ended up finishing in the top 10.',
     skills: ['Python'],
     github: "https://github.com/erikhai/risk-game-engine",
+    video: null
   },
   {
     name: 'Cardify',
@@ -35,6 +37,7 @@ const projects = [
     description: 'This was a full stack university assignment conducted in a group of 5. This project is a flashcard application where users can make their own decks of cards for studying and utilise various game modes to test their memory. This assignment made us go through the entire software life cycle, from planning out scope requirements and wireframes to developing, testing and deploying the application. We used react to design the frontend and django for the backend. We used the amazon services to deploy our project.',
     skills: ['React', 'Django', 'AWS', 'Figma'],
     github: null,
+    video: null
   },
   {
     name: 'Capstone Project',
@@ -43,6 +46,7 @@ const projects = [
     description: 'This was a full stack university assignment conducted in a group of 6. This project was about developing a website that would allow users to forecast values of a dataset so that the user can study how their dataset may behave in the future. This project uses django for the front and back end and python for the machine learning models.',
     skills: ['Django', 'Figma', "Python"],
     github: null,
+    video: "https://drive.google.com/file/d/1aG3_fUuXUlMfwUo425EOOi87ju4bJNeX/view?usp=sharing"
   },
   {
     name: 'Bank Replica',
@@ -50,7 +54,8 @@ const projects = [
     banner: banner4,
     description: 'This is a terminal based replica of what would happen in a bank. It uses ORM to manage a database and allows users to deposit, withdraw and transfer money. There is also an administrative viewpoint setup for overall system management.',
     skills: ['Java'],
-    github: 'https://github.com/yourusername/project-one', 
+    github: 'https://github.com/erikhai/Bank-Replica', 
+    video: null
   },
   {
     name: 'Cyphers',
@@ -59,6 +64,7 @@ const projects = [
     description: 'This is a terminal based system that allows users to encrypt and decrypt messages. The user is presented with various methods to chose from. This was a quick side project for me to do to better understand how encryption/decryption works and understand how hard it is to make a secure system.',
     skills: ['Python'],
     github: "https://github.com/erikhai/Cyphers", 
+    video: null
   },
 
 
@@ -103,6 +109,15 @@ const Projects = () => {
                   </a>
                 ) : (
                   <span className="no-github">No GitHub link available</span>
+                )}
+              </div>
+              <div className="github-placeholder">
+                {project.video ? (
+                  <a href={project.video} target="_blank" rel="noopener noreferrer">
+                    View Video Demo
+                  </a>
+                ) : (
+                  <span className="no-github">No video demo available</span>
                 )}
               </div>
             </div>
