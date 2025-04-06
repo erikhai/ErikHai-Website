@@ -37,7 +37,7 @@ const projects = [
     description: 'This was a full stack university assignment conducted in a group of 5. This project is a flashcard application where users can make their own decks of cards for studying and utilise various game modes to test their memory. This assignment made us go through the entire software life cycle, from planning out scope requirements and wireframes to developing, testing and deploying the application. We used react to design the frontend and django for the backend. We used the amazon services to deploy our project.',
     skills: ['React', 'Django', 'AWS', 'Figma', "SQLite"],
     github: null,
-    video: null
+    video: "https://drive.google.com/file/d/1aG3_fUuXUlMfwUo425EOOi87ju4bJNeX/view?usp=sharing"
   },
   {
     name: 'Capstone Project',
