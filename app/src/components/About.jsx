@@ -6,17 +6,21 @@ const skills = [
   "CSS",
   "Django",
   "Firebase",
+  "Figma",
   "Flask",
   "Flutter",
   "Git",
   "HTML",
+  "Image Classifiers",
   "Java",
   "JavaScript",
   "Machine Learning",
   "MongoDB",
+  "Neural Networks",
   "Python",
   "React",
-  "SQL"
+  "SQL",
+  "SQLite"
 ];
 
 

@@ -35,7 +35,7 @@ const projects = [
     type: 'Uni Assignment (ELEC3609)',
     banner: banner2,
     description: 'This was a full stack university assignment conducted in a group of 5. This project is a flashcard application where users can make their own decks of cards for studying and utilise various game modes to test their memory. This assignment made us go through the entire software life cycle, from planning out scope requirements and wireframes to developing, testing and deploying the application. We used react to design the frontend and django for the backend. We used the amazon services to deploy our project.',
-    skills: ['React', 'Django', 'AWS', 'Figma'],
+    skills: ['React', 'Django', 'AWS', 'Figma', "SQLite"],
     github: null,
     video: null
   },
@@ -46,7 +46,7 @@ const projects = [
     description: 'This was a full stack university assignment conducted in a group of 6. This project was about developing a website that would allow users to forecast values of a dataset so that the user can study how their dataset may behave in the future. This project uses django for the front and back end and python for the machine learning models.',
     skills: ['Django', 'Figma', "Python"],
     github: null,
-    video: "https://drive.google.com/file/d/1aG3_fUuXUlMfwUo425EOOi87ju4bJNeX/view?usp=sharing"
+    video: null
   },
   {
     name: 'Bank Replica',
